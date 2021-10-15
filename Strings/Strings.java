@@ -2,7 +2,7 @@ package Strings;
 
 import java.util.Arrays;
 
-public class String {
+public class Strings {
     public static void main(String[] args) {
         String myString = new String("This is a string in java");
         String myString2 = "This is a string in java";

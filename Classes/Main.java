@@ -1,20 +1,18 @@
-package Classes;
-
 // class serves as a blueprint for creating objects
 // objects are an instance of an class
 // class should be an entity meaning one class should contain only things that are related to it, like a person class can have things like age, name but not things like weather
 
-class classname {
+class Classname {
     // instance variable
     int val1;
     String val2;
 
     // methods
-    void method1(/* paramters */) {
+    void method1(/* parameters */) {
         // body of method1
     }
 
-    int method2(/* paramters */) {
+    int method2(/* parameters */) {
         // body of method2
         return 0;
     }
@@ -38,6 +36,7 @@ public class Main {
 
         // both objects are different and changing one doesnt affect other ( this is
         // also called encapsulation )
+        // oops pillars - encapsulation, inheritance, polymorphism, abstraction
 
         Pokemon p2 = new Pokemon();
 
