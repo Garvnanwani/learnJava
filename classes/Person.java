@@ -4,6 +4,10 @@ abstract class Person {
     String name;
     int age;
 
+    Person() {
+        System.out.println("constructor of parent");
+    }
+
     abstract void walk();
 
     void eat() {
@@ -15,9 +19,17 @@ abstract class Person {
 
 class Developer extends Person {
 
+    Developer() {
+        super();
+    }
+
     @Override
     void walk() {
         System.out.println("Developer Walking");
+    }
+
+    void eat() {
+        System.out.println("Develoepr Is Eating");
     }
 }
 

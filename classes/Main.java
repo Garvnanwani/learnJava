@@ -31,6 +31,8 @@ public class Main {
 
         Pokemon p1 = new Pokemon();
 
+        String p1Name = "sd"
+
         p1.name = "Pikachu";
         p1.level = 10;
 

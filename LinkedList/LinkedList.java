@@ -1,5 +1,7 @@
 package LinkedList;
 
+// import classes.Pokemon;
+
 class Node {
     // access modifier - public, private
     public int data;
@@ -16,8 +18,12 @@ class Node {
 
 public class LinkedList {
 
+    public Node headNode;
+
     public static void main(String[] args) {
         Node l1 = new Node(10);
+        // Pokemon p1 = new Pokemon();
+
         System.out.println(l1.data);
 
     }
