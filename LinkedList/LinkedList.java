@@ -1,30 +1,61 @@
 package LinkedList;
 
-// import classes.Pokemon;
-
 class Node {
-    // access modifier - public, private
-    public int data;
-    public Node next;
+    int data;
+    Node next;
 
-    // constructor
     public Node(int val) {
         data = val;
+        next = null;
     }
 }
 
-// two problems
-// - data can be int only - coz not generic - solved
-
 public class LinkedList {
 
-    public Node headNode;
+    Node head;
+
+    void addLast(int data) {
+        Node temp = head;
+
+        if (head == null) {
+            temp = new Node(data);
+            head = temp;
+            return;
+        }
+
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = new Node(data);
+
+    }
+
+    int size() {
+        int size = 0;
+
+        if (head == null) {
+            return size;
+        }
+
+        Node temp = head;
+
+        while (temp != null) {
+            size++;
+            temp = temp.next;
+        }
+
+        return size;
+    }
+
+    boolean isEmpty() {
+        return head == null;
+    }
 
     public static void main(String[] args) {
-        Node l1 = new Node(10);
-        // Pokemon p1 = new Pokemon();
+        LinkedList ll = new LinkedList();
 
-        System.out.println(l1.data);
-
+        ll.addLast(5);
+        System.out.println(ll.size());
     }
 }
